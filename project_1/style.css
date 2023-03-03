@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(248, 244, 244);
+}
+
+header {
+    height: 9vh;
+    background-color: #2874f0;
+    display: flex;
+    overflow-x: auto;
+    align-items: center;
+    justify-content: center;
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+
+header ul{
+    display: flex;
+    margin-left:0;
+    list-style-type: none;
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    /* flex-direction: column; */
+}
+nav .logo{
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    width: 88px;
+    padding: 0 25px;
+    /* padding-top: 30px; */
+    /* margin-left: 10vw; */
+}
+.input {
+    padding-left: 1vw;
+    margin: 0 20px;
+    width: 40vw;
+    height: 5vh;
+}
+.btn {
+    margin: auto;
+    background-color: white;
+    color: #2874f0;
+    font-size: 2.5vh;
+    font-weight: 900;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+header ul {
+    margin-left: 3vw;
+}
+
+header ul li {
+    padding: 0 20px;
+    color: white;
+    font-size: large;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: auto;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+}
+header ul li a:hover{
+    font-weight: bolder;
+}
+a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.linkpara {
+    text-align: center;
+}
+
+.categories {
+    /* height: 10vw; */
+    border: 2px solid gainsboro;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    overflow-x: auto;
+
+}
+.categories a{
+    display: flex;
+    flex-direction: column;
+}
+
+.categories img {
+    margin: 0 auto;
+    width: 5vw;
+}
+
+.item {
+    margin: 0 30px;
+}
+
+.slider {
+    height: 20vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 1vh;
+}
+/* .contents{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+} */
+.categories_2{
+    margin: 10px;
+    border: 2px solid gainsboro;
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 0.3vh;
+    overflow-x: auto;
+}
+.categories_2 img{
+height:40%;
+width:12vw;
+margin:20px;
+}
+ .btn_2{
+    background-color: #2874f0; 
+    margin-left:10px;
+    color:white;
+    /* font-weight:900; */
+    font-size:medium;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding:4px 10px;
+}
+.btn_2:hover{
+    font-weight:900;
+}
+footer {
+    /* display: flex; */
+    /* height: 40vh; */
+    margin-top: 5vh;
+    color: white;
+    font-weight: 900;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #172337;
+}
+footer .list1{
+    display: flex;
+    overflow-x: auto;
+}
+footer .list1 ul{
+    display: flex;
+    flex-direction: column;
+    margin:1vw 5vw 0 3vw;
+    list-style-type: none;
+    font-weight: 10;
+    font-size: small;
+}
+footer .list1 ul li{
+    margin:3px 0;
+}
+.list1 a{
+    text-decoration: none;
+    color:white;
+}
+.list1 a:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width:1000px){
+
+        nav{
+            flex-direction: column;
+            justify-content: center;
+        }
+        header{
+            height:25vh;
+        }
+        .categories img{
+            width: 35px;
+        }
+        .categories{
+            height: 20vh;
+        }
+        .logo{
+            justify-content: center;
+            margin: 12px 0;
+        }
+        header ul {
+            margin-left: 0;
+        }
+        .search{
+            justify-content: center;
+        }
+        .search .btn{
+            margin-left: 0;
+        }
+        .search .input{
+           width: 250px;
+           margin-right: 10px;
+        }
+        .search input{
+            margin: 12px 16px;
+        }
+    
+        nav ul {
+            height: 34px;
+        }
+}
